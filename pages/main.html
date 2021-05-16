@@ -22,7 +22,7 @@
     <li>10 Emails</li>
     <li>10 Domains</li>
     <li>1GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    <li class="grey"><a href="#" class="button" onclick="document.getElementById('id01').style.display='none'">Sign Up</a></li>
   </ul>
 </div>
 
@@ -34,7 +34,7 @@
     <li>25 Emails</li>
     <li>25 Domains</li>
     <li>2GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    <li class="grey"><a href="#" class="button" onclick="document.getElementById('id01').style.display='none'">Sign Up</a></li>
   </ul>
 </div>
     
@@ -46,12 +46,10 @@
     <li>50 Emails</li>
     <li>50 Domains</li>
     <li>5GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    <li class="grey"><a href="#" class="button" onclick="document.getElementById('id01').style.display='none'">Sign Up</a></li>
   </ul>
 </div>
-    <button
-onclick="document.getElementById('id01').style.display='block'"
-style="width:auto;">Login</button>
+  
 <div id="id01" class="modal">
   <form class="modal-content animate" action="/action_page.php"
 method="post">
@@ -59,7 +57,7 @@ method="post">
       <span
 onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
     </div>
     <div class="container">
       <label for="uname"><b>Username</b></label>
