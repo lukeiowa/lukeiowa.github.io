@@ -19,3 +19,18 @@ function display() {
   message += "<li><b>PASSWORD: </b>" + document.login.psw.value + "</ul>";
   DispWin.document.write(message);
 }
+
+function setUserInfo() {
+    var username = document.getElementById("uname").value;
+    var password = document.getElementById("psw").value;
+    if (username == "" || password == "") {
+    window.alert("Please fill out the form!");
+    } else {
+    window.alert("Welcome " + username + "!\n Your Username is : " + username + "\nYour Password is: " + password); 
+    
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    localStorage.setItem("loggedin", "true");
+    location.replace("https://lukeiowa.github.io/pages/home.html");
+    }
+}
