@@ -74,9 +74,13 @@ localStorage.getItem("password")) {
  
 } else {
         window.alert("Welcome back " + username + "!");
-     location.replace("https://lukeiowa.github.io/pages/home.html");
-} }
+        location.replace("https://lukeiowa.github.io/pages/home.html");
+        localStorage.setItem("loggedin", "true");
+        }
+    }
 }
+
+
 function forgotPassword() {
 if (localStorage.getItem("loggedin") == "true") {
         window.alert("Your Password is: " +
