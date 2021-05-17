@@ -8,11 +8,21 @@ window.onclick = function(event) {
 }
  
 window.onload = function startPage() {
-    if (localStorage.getItem("loggedin") == "true") {
+    redirect();
+    fillInput();
+}
+
+function fillInput() {
+if (localStorage.getItem("rememberme") == "true") {
+        document.getElementById("uname").value = localStorage.getItem("username");
+    document.getElementById("psw").value = localStorage.getItem("password");
+    } 
+}
+function redirect() {
+if (localStorage.getItem("loggedin") == "true") {
         window.alert("Hello " + localStorage.getItem("username") + "!" + "\n You're already signed in! \n Directing you to our main page...");
     }
 }
-
 function alerts() {
 window.alert("please work");
 }
@@ -39,7 +49,8 @@ if (localStorage.getItem("rememberme") == "true") {
 localStorage.getItem("username");
     document.getElementById("psw").value =
 localStorage.getItem("password");
-} }
+    } 
+}
 function setUserInfo() {
         var username = document.getElementById("uname").value;
     var password = document.getElementById("psw").value;
