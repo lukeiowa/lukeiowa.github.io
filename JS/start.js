@@ -7,7 +7,9 @@ window.onclick = function(event) {
     }
 }
  
-
+function alerts() {
+window.alert("please work");
+}
 
 function directToHomepage() {
   location.replace("https://lukeiowa.github.io/pages/home.html");
