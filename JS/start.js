@@ -21,6 +21,7 @@ if (localStorage.getItem("rememberme") == "true") {
 function redirect() {
 if (localStorage.getItem("loggedin") == "true") {
         window.alert("Hello " + localStorage.getItem("username") + "!" + "\n You're already signed in! \n Directing you to our main page...");
+        location.replace("https://lukeiowa.github.io/pages/home.html");
     }
 }
 function alerts() {
@@ -68,7 +69,7 @@ username + "\nYour Password is: " + password);
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
     localStorage.setItem("loggedin", "true");
-  location.replace("https://lukeiowa.github.io/pages/home.html");
+    location.replace("https://lukeiowa.github.io/pages/home.html");
     }
 } else {
   if (checkbox == true) {
