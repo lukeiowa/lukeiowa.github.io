@@ -7,6 +7,12 @@ window.onclick = function(event) {
     }
 }
  
+window.onload = function startPage() {
+    if (localStorage.getItem("loggedin") == "true") {
+        window.alert("Hello " + localStorage.getItem("username") + "!" + "\n You're already signed in! \n Directing you to our main page...");
+    }
+}
+
 function alerts() {
 window.alert("please work");
 }
