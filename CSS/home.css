@@ -118,3 +118,17 @@ body, html {
   background-color: #555;
   color: white;
 }
+
+div {
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
