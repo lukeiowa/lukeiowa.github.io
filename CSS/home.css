@@ -39,7 +39,6 @@
 
 
 
-body {margin:0;}
 
 .navbar2 {
   overflow: hidden;
@@ -74,12 +73,13 @@ body {margin:0;}
 
 body, html {
     height: 100%;
+    margin: 0;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=1390&crop=1");
 
   /* Set a specific height */
   height: 50%;
@@ -98,5 +98,21 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
   color: white;
 }
