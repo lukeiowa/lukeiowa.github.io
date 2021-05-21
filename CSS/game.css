@@ -59,7 +59,15 @@ body, html {
   background-color: #555;
   color: white;
 }
-
+button {
+  border: none;
+  outline: 0;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
 div {
   padding: 5px;
 }
