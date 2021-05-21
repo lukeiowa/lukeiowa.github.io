@@ -1,8 +1,15 @@
 var coll = document.getElementsByClassName("collapsible");
-var i;
+var e;
+var d = new Date("2015-03-25");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+window.onload = function startingPage() {
+  window.alert("NOTE: The game is currently down as of " + d + " but will be fixed shortley (Around 3PM EST?)");
+}
+
+
+
+for (e = 0; e < coll.length; e++) {
+  coll[e].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
