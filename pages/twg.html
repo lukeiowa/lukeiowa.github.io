@@ -8,6 +8,13 @@
       body {
         font-family: 'Baloo 2';font-size: 22px;
       }
+      #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f1f1f1f1;
+  margin-top: 20px;
+}
     </style>
   </head>
   <body>
@@ -34,9 +41,48 @@
       <p>Battle for the Dashlands is a simple FPS (or First Person Shooter) game, built using a tutorial from <a href="https://sharpcoderblog.com/">Sharpcoder.com</a></p>
       <h5>While this was made using a tutorial, I did expand upon it, and plan on adding many more features in the future!</h5>
     </div>
-    <a id="change"><button type="button" class="collapsible">View the Changelog!</button></a>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+    <<button onclick="showMD()">Show the Map Generator</button>
+    <div id="code1">
+      <pre>
+        <code>
+        
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MapDisplay : MonoBehaviour
+{
+    public Renderer textureRenderer;
+    public MeshFilter meshFilter;
+    public MeshRenderer meshRenderer;
+
+    public void DrawTexture(Texture2D texture)
+    {
+// Where old texture code use to be
+        
+
+        textureRenderer.sharedMaterial.mainTexture = texture;
+        textureRenderer.transform.localScale = new Vector3(texture.width, 1, texture.height);
+    }
+
+    public void DrawMesh(MeshData meshData, Texture2D texture)
+    {
+        meshFilter.sharedMesh = meshData.CreateMesh();
+        meshRenderer.sharedMaterial.mainTexture = texture;
+    }
+}
+        </code>
+      </pre>
+    </div>
+  <script>
+    function showMD() {
+  var j = document.getElementById("codeOne");
+  if (j.style.display === "none") {
+    j.style.display = "block";
+  } else {
+    j.style.display = "none";
+  }
+}
+  </script>
   </body>
 </html>
