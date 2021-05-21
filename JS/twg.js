@@ -1,4 +1,4 @@
-var d = new Date("2015-03-25");
+var d = new Date("2025-05-21");
 
 window.onload = function startingPage() {
   window.alert("NOTE: The generator is currently down as of " + d + " but will be fixed shortly (Around 3PM EST?)");
