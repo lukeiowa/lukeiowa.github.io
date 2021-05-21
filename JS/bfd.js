@@ -1,25 +1,9 @@
-var coll = document.getElementsByClassName("collapsible");
-var e;
+
 var d = new Date("2015-03-25");
 
 window.onload = function startingPage() {
-  window.alert("NOTE: The game is currently down as of " + d + " but will be fixed shortley (Around 3PM EST?)");
+  window.alert("NOTE: The game is currently down as of " + d + " but will be fixed shortly (Around 3PM EST?)");
 }
-
-
-
-for (e = 0; e < coll.length; e++) {
-  coll[e].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
 
 
 function openNav() {
@@ -33,3 +17,17 @@ function closeNav() {
 function redirect() {
         location.replace("https://lukeiowa.github.io/game.html");
 }
+
+var coll = document.getElementsByClassName("collapsible");
+var a;
+for (a = 0; a < coll.length; a++) {
+  coll[a].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+}); }
+
