@@ -126,5 +126,30 @@
       };
       document.body.appendChild(script);
     </script>
+      
+      
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4nJc3qx-ey7qXNK1UQjOwxoRBQu81L0o",
+    authDomain: "gdaddonstorelike.firebaseapp.com",
+    projectId: "gdaddonstorelike",
+    storageBucket: "gdaddonstorelike.appspot.com",
+    messagingSenderId: "800202302277",
+    appId: "1:800202302277:web:d868d67362943d2fd7142c",
+    measurementId: "G-8128RPT4VY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
