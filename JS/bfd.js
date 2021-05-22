@@ -2,7 +2,7 @@
 var d = new Date("2021-05-21");
 
 window.onload = function startingPage() {
-  window.alert("NOTE: The game is currently down as of " + d + " but will be fixed shortly (Around 3PM EST?)");
+  //window.alert("NOTE: The game is currently down as of " + d + " but will be fixed shortly (Around 3PM EST?)");
 }
 
 
