@@ -18,7 +18,7 @@ function redirect() {
         location.replace("https://lukeiowa.github.io/game.html");
 }
 function beta() {
-        location.replace("https://lukeiowa.github.io/gamemobile.html");
+        location.replace("https://lukeiowa.github.io/beta.html");
 }
 
 var coll = document.getElementsByClassName("collapsible");
