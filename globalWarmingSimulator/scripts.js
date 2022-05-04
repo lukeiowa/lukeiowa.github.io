@@ -1,4 +1,4 @@
-window.alert("v1.09");
+window.alert("v1.10");
 
 
 // import { achievementUnlocked } from "./achievements";
@@ -908,7 +908,7 @@ function raiseYear() {
 }
 
 function raiseTemperature () {
-    tempIncrease *= 1.1;
+    tempIncrease *= 1.05;
 }
 
 function endGame() {
@@ -1191,6 +1191,30 @@ function updateUpgradesSecond() {
   
   if (researchPoints >= 150 && biomassFarm.owned > 75) {
     addUpgrade(upgrades.bio3);
+  }
+  
+  if (researchPoints >= 150 && geothermalPlant.owned > 50) {
+    addUpgrade(upgrades.geo1);
+  }
+  
+  if (researchPoints >= 200 && geothermalPlant.owned > 100) {
+    addUpgrade(upgrades.geo2);
+  }
+  
+  if (researchPoints >= 250 && geothermalPlant.owned > 150) {
+    addUpgrade(upgrades.geo3);
+  }
+  
+  if (researchPoints >= 300 && hydroPlant.owned > 10) {
+    addUpgrade(upgrades.hydro1);
+  }
+  
+  if (researchPoints >= 350 && hydroPlant.owned > 50) {
+    addUpgrade(upgrades.hydro);
+  }
+  
+  if (researchPoints >= 150 && hydroPlant.owned > 150) {
+    addUpgrade(upgrades.hydro3);
   }
 
 
