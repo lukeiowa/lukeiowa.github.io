@@ -1,6 +1,6 @@
 // More API functions here:
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-
+window.alert("v1.0.0");
 // the link to your model provided by Teachable Machine export panel
 const URL = "https://teachablemachine.withgoogle.com/models/wuL1xFEJ6/";
 
